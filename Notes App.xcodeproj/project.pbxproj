@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A9E910C2E53040700D15FA9 /* Notes_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9E910B2E53040700D15FA9 /* Notes_AppApp.swift */; };
+		9A9E910D2E53040700D15FA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9E910A2E53040700D15FA9 /* ContentView.swift */; };
+		9A9E910E2E53040700D15FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9E91092E53040700D15FA9 /* Assets.xcassets */; };
+		9A9E912A2E53077300D15FA9 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9E911F2E53077300D15FA9 /* Poppins-Light.ttf */; };
+		9A9E91322E53077300D15FA9 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9E91232E53077300D15FA9 /* Poppins-Regular.ttf */; };
+		9A9E91342E53077300D15FA9 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9E91242E53077300D15FA9 /* Poppins-SemiBold.ttf */; };
+		9A9E91372E53077300D15FA9 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9E91182E53077300D15FA9 /* Poppins-Bold.ttf */; };
+		9A9E913A2E53077300D15FA9 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9E91212E53077300D15FA9 /* Poppins-Medium.ttf */; };
+		9A9E91432E5379BF00D15FA9 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9E91422E5379BF00D15FA9 /* FontHelper.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9A1764112E50CE150055BC7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +39,29 @@
 		9A1764032E50CE140055BC7A /* Notes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1764102E50CE150055BC7A /* Notes AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A17641A2E50CE150055BC7A /* Notes AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9E91092E53040700D15FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A9E910A2E53040700D15FA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A9E910B2E53040700D15FA9 /* Notes_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_AppApp.swift; sourceTree = "<group>"; };
+		9A9E91182E53077300D15FA9 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		9A9E911F2E53077300D15FA9 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		9A9E91212E53077300D15FA9 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		9A9E91232E53077300D15FA9 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		9A9E91242E53077300D15FA9 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		9A9E913E2E53745100D15FA9 /* Notes-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Notes-App-Info.plist"; sourceTree = "<group>"; };
+		9A9E91422E5379BF00D15FA9 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9A1764052E50CE140055BC7A /* Notes App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Notes App";
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9A9E913D2E53742F00D15FA9 /* Exceptions for "Notes AppUITests" folder in "Notes AppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Notes-AppUITests-Info.plist",
+			);
+			target = 9A1764192E50CE150055BC7A /* Notes AppUITests */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		9A1764132E50CE150055BC7A /* Notes AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Notes AppTests";
@@ -42,6 +69,9 @@
 		};
 		9A17641D2E50CE150055BC7A /* Notes AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9A9E913D2E53742F00D15FA9 /* Exceptions for "Notes AppUITests" folder in "Notes AppUITests" target */,
+			);
 			path = "Notes AppUITests";
 			sourceTree = "<group>";
 		};
@@ -75,7 +105,9 @@
 		9A1763FA2E50CE140055BC7A = {
 			isa = PBXGroup;
 			children = (
-				9A1764052E50CE140055BC7A /* Notes App */,
+				9A9E913E2E53745100D15FA9 /* Notes-App-Info.plist */,
+				9A9E91412E5376ED00D15FA9 /* Helper */,
+				9A9E91402E5376D600D15FA9 /* View */,
 				9A1764132E50CE150055BC7A /* Notes AppTests */,
 				9A17641D2E50CE150055BC7A /* Notes AppUITests */,
 				9A1764042E50CE140055BC7A /* Products */,
@@ -92,6 +124,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9A9E91062E5302E700D15FA9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9A9E91182E53077300D15FA9 /* Poppins-Bold.ttf */,
+				9A9E911F2E53077300D15FA9 /* Poppins-Light.ttf */,
+				9A9E91212E53077300D15FA9 /* Poppins-Medium.ttf */,
+				9A9E91232E53077300D15FA9 /* Poppins-Regular.ttf */,
+				9A9E91242E53077300D15FA9 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9A9E91402E5376D600D15FA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A9E910B2E53040700D15FA9 /* Notes_AppApp.swift */,
+				9A9E910A2E53040700D15FA9 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A9E91412E5376ED00D15FA9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9E91092E53040700D15FA9 /* Assets.xcassets */,
+				9A9E91062E5302E700D15FA9 /* Fonts */,
+				9A9E91422E5379BF00D15FA9 /* FontHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +169,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				9A1764052E50CE140055BC7A /* Notes App */,
 			);
 			name = "Notes App";
 			packageProductDependencies = (
@@ -212,6 +272,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9E910E2E53040700D15FA9 /* Assets.xcassets in Resources */,
+				9A9E912A2E53077300D15FA9 /* Poppins-Light.ttf in Resources */,
+				9A9E91322E53077300D15FA9 /* Poppins-Regular.ttf in Resources */,
+				9A9E91342E53077300D15FA9 /* Poppins-SemiBold.ttf in Resources */,
+				9A9E91372E53077300D15FA9 /* Poppins-Bold.ttf in Resources */,
+				9A9E913A2E53077300D15FA9 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9E91432E5379BF00D15FA9 /* FontHelper.swift in Sources */,
+				9A9E910C2E53040700D15FA9 /* Notes_AppApp.swift in Sources */,
+				9A9E910D2E53040700D15FA9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +466,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notes-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,6 +494,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notes-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -484,6 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notes-AppUITests-Info.plist";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Notes.Notes-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notes-AppUITests-Info.plist";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Notes.Notes-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
