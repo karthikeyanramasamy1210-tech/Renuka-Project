@@ -8,20 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var userName: String = ""
+    @State private var passWord = ""
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Test world")
-                    .font(CustomFont.bold(50).font)
-                // ✅ Navigation button
-                NavigationLink("Go to Details", destination: DetailsView())
-                    .font(CustomFont.regular(20).font)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Your Email")
+                    .font(CustomFont.semiBold(16).font)
+                    .padding(.leading,25)
+                    .padding(.top,60)
+                TextField("Email",text: $userName)
+                    .font(CustomFont.semiBold(16).font)
+                    .padding(.leading,21)
+                    .frame(height:56)
+                    .overlay(RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.gray, lineWidth: 2))
+                    .padding(.horizontal, 26)
+                Text("Password")
+                    .font(CustomFont.semiBold(16).font)
+                    .padding(.leading,25)
+                    .padding(.top, 8)
+                SecureField("Enter password", text: $passWord)
+                    .font(CustomFont.semiBold(16).font)
+                    .padding(.leading,21)
+                    .frame(height:56)
+                    .overlay(RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.gray, lineWidth: 2))
+                    .padding(.horizontal,26)
+                Spacer()
             }
-            .navigationTitle("Login")
+            .frame(maxWidth: .infinity,maxHeight: .infinity, alignment: .topLeading)
+            
+            .navigationTitle("Log in")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
