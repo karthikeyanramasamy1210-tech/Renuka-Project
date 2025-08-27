@@ -17,11 +17,11 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Your Email")
                     .font(CustomFont.semiBold(16).font)
-                    .padding(.top,60)
+                    .padding(.top, 60)
                 TextField("Email",text: $userName)
                     .font(CustomFont.semiBold(16).font)
-                    .padding(.leading,21)
-                    .frame(height:56)
+                    .padding(.leading, 21)
+                    .frame(height: 56)
                     .overlay(RoundedRectangle(cornerRadius: 12)
                         .stroke(Color.gray, lineWidth: 2))
                 Text("Password")
@@ -30,8 +30,8 @@ struct ContentView: View {
                 HStack {
                     SecureField("Enter password", text: $passWord)
                         .font(CustomFont.semiBold(16).font)
-                        .padding(.leading,21)
-                        .frame(height:56)
+                        .padding(.leading, 21)
+                        .frame(height: 56)
                     Button(action: {
                         isPasswordVisible.toggle()
                     }) {
@@ -43,13 +43,14 @@ struct ContentView: View {
                 .overlay(RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.gray, lineWidth: 2))
                 HStack {
-                    Text("Wrong password")
+                    Text("Worng password")
                         .font(CustomFont.semiBold(16).font)
                     Spacer()
-                    Button("Forgot password?"){
+                    NavigationLink(destination: ForgotPasswordView()){
+                        Text("Forgot password?")
+                        .font(CustomFont.semiBold(16).font)
+                        .foregroundColor(.newBlue)
                     }
-                    .font(CustomFont.semiBold(16).font)
-                    .foregroundColor(.newBlue)
                 }
                 .padding(.top, 6)
                 Button("Continue") {
@@ -69,9 +70,9 @@ struct ContentView: View {
                         .frame(height: 1)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(.top,25)
+                .padding(.top, 25)
                 .foregroundColor(.lightgrey)
-                .padding(.horizontal,64)
+                .padding(.horizontal, 64)
                 Button {
                     
                 } label: {
@@ -127,9 +128,9 @@ struct ContentView: View {
     ContentView()
 }
 
-struct DetailsView: View {
-    var body: some View {
-        Text("Navigation view")
-            .navigationTitle("Details View")
-    }
-}
+//struct DetailsView: View {
+//    var body: some View {
+//        Text("Navigation view")
+//            .navigationTitle("Details View")
+//    }
+//}
